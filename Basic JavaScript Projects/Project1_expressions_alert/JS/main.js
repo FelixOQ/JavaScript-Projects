@@ -29,3 +29,7 @@ document.write(x + 7);  //Writes "21" (the result of the expression x + 7) direc
 var Sent1 = "This is the beginning of the string", Sent2 = " and this is the end of the string";    //Declares two variables and assigns them string values
 
 document.write("<br>" + Sent1 + Sent2);     //Writes a line break concatenated with variables Sent1 and Sent2 directly into the HTML document
+
+function changeText(x) {
+    x.innerHTML = "Wait, don't go!";
+}
