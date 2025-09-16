@@ -7,3 +7,7 @@ function orBoth() { //Declares a function named orBoth()
     document.getElementById("Neither").innerHTML += ", or maybe both!";     //Adds (concatenates) a string value to the content of the HTML element with id value "Neither"
     document.getElementById("Both").innerHTML += " Not!";   //Adds a string value to the content of the HTML element with id value "Both"
 }
+
+function bigText() {
+    document.getElementById("big").style.fontSize = "larger";
+}
