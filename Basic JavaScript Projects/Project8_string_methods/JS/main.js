@@ -7,3 +7,9 @@ function combine() {
     let allParts = part1.concat(part2, part3, part4, part5);
     document.getElementById("words").innerHTML = allParts;
 }
+
+function sliced() {
+    let full = document.getElementById("slicer");
+    let ninja = document.getElementById("sliced");
+    ninja.innerHTML = full.innerHTML.slice(7, 12);
+}
