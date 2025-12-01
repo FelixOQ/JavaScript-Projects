@@ -35,7 +35,10 @@ function clicky() {
 function ducks() {
     let howManyDucks = document.getElementById("duckQuantity").value;
     let ducksHere = document.getElementById("ducks");
-    if (howManyDucks % 1 != 0) {        //If the number of ducks is not an integer
+    if (isNaN(howManyDucks)) {          //If the value entered is not a number
+        ducksHere.innerHTML = "Please enter a number.";
+    }
+    else if (howManyDucks % 1 != 0) {   //If the number of ducks is not an integer
         ducksHere.innerHTML = "You monster! Put them back together!";
     }
     else if (howManyDucks > 7) {        //If there are more than 7 ducks
