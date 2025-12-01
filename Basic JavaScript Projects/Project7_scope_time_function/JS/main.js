@@ -16,7 +16,7 @@ function black() {      //Function with an intentional error
 
 function nightOwl() {
     const currentTime = new Date();     //Assign a date object with the current date & time
-    if (currentTime >= 22 || currentTime <= 3) {
+    if (currentTime.getHours() >= 22 || currentTime.getHours() <= 3) {
         document.getElementById("studying").innerHTML = "You're a night owl.";
     }       //Display "You're a night owl." if the user is studying
 }           //between the hours of 10:00pm and 03:00am
