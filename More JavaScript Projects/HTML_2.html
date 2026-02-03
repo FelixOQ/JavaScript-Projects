@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./CSS/CSS_1.css">
+</head>
+
+<body>
+    <form name="dndForm" action="" onsubmit="return validate()" method="post">
+        <fieldset>
+            <legend>Player Details</legend>
+            <label for="pName">Name</label><br>
+            <input type="text" id="pName" name="pName"><br>
+            <label for="pGender">Gender</label><br>
+            <input type="text" id="pGender" name="pGender"><br>
+            <label for="pAge">Age</label><br>
+            <input type="number" max="150" id="pAge" name="pAge"><br>
+            <label for="Email">Email</label><br>
+            <input type="email" id="Email" name="Email">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Character Details</legend>
+            <label for="cName">Name</label><br>
+            <input type="text" id="cName" name="cName"><br>
+            <label for="cGender">Gender</label><br>
+            <input type="text" id="cGender" name="cGender"><br>
+            <label for="Species">Species</label><br>
+            <select id="Species" name="Species">
+                <option value="" selected disabled>--Choose one--</option>
+                <option value="dwarf">Dwarf</option>
+                <option value="elf">Elf</option>
+                <option value="gnome">Gnome</option>
+                <option value="human">Human</option>
+                <option value="tabaxi">Tabaxi</option>
+                <option value="tiefling">Tiefling</option>
+            </select><br>
+            <label for="Class">Class</label><br>
+            <select id="Class" name="Class">
+                <option value="" selected disabled>--Choose one--</option>
+                <optgroup label="Spellcasters">
+                    <option value="bard">Bard</option>
+                    <option value="cleric">Cleric</option>
+                    <option value="druid">Druid</option>
+                    <option value="sorcerer">Sorcerer</option>
+                    <option value="warlock">Warlock</option>
+                    <option value="wizard">Wizard</option>
+                </optgroup>
+                <optgroup label="Half Casters">
+                    <option value="artificer">Artificer</option>
+                    <option value="paladin">Paladin</option>
+                    <option value="ranger">Ranger</option>
+                </optgroup>
+                <optgroup label="Martial">
+                    <option value="barbarian">Barbarian</option>
+                    <option value="fighter">Fighter</option>
+                    <option value="monk">Monk</option>
+                    <option value="rogue">Rogue</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <br>
+        <input type="submit" value="Sign me up!">
+    </form>
+    <script src="./JavaScript/JavaScript_2.js"></script>
+</body>
+
+</html>

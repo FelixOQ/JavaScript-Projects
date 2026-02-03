@@ -1,0 +1,57 @@
+body {
+    background-color: bisque;
+}
+
+form {
+    border: 2px solid cornflowerblue;
+    border-radius: 12px;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 22px 30px;
+    background-color: aliceblue;
+}
+
+fieldset {
+    background-color: rgb(214, 198, 246);
+    border-radius: 6px;
+    padding: 10px 20px 15px 20px;
+}
+
+legend {
+    font-size: larger;
+    font-family: Cambria;
+}
+
+input[type="text"], input[type="number"], input[type="email"], select {
+    margin-bottom: 7px;
+    margin-top: 4px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid darkslategrey;
+    border-radius: 3px;
+    background-color:ghostwhite;
+    color:darkslateblue;
+    
+}
+
+input[type="text"]:hover, input[type="number"]:hover, input[type="email"]:hover, select:hover {
+    box-shadow: 0 0 4px darkslategrey inset;
+}
+
+input[type="submit"] {
+    width: 170px;
+    height: 76px;
+    border-radius: 45px;
+    border: 4px solid rgb(189, 176, 201);
+    display: block;
+    margin: 10px auto 0 auto;
+    font-size: 25px;
+    background-color: rgba(128, 75, 55, 0.886);
+    color:bisque;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
