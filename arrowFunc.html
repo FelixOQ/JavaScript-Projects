@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Arrow Functions</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p id="pen"></p>
+        <button onclick="penColour()">What colour?</button>
+        <script>
+            let pen = "green pen";
+            penColour = () => document.getElementById("pen").innerHTML = `This is a ${pen}.`;
+        </script>
+    </body>
+</html>
