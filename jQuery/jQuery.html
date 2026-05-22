@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <script>
+        $(document).ready(function() {  //Targets the HTML file once it has loaded
+            $("html").append(       //Adds content to the end of the <html> element
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            $("#2").css({"color":"red"});   //Sets the second paragraph's colour to red
+            $("#3").click(function() {
+                $("h1").hide();         //Hides the h1 element when the third paragraph is clicked
+            });
+            $("#1").click(function() {
+                if ($("h1").css("display") === "none") {    //Checks whether the h1 element's display property is set to none when paragraph 1 is clicked
+                    $("h1").show();             //Displays the h1 element
+                }
+            })
+        });
+    </script>
+</html>
