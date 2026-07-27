@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            //creates a text string
+            var Character = "<character>" +
+                "<name>Nom</name>" +
+                "<species>Firbolg</species>" +
+                "<class>Ranger</class>" +
+                "<weapon>Scimitar</weapon>" +
+                "</character>";
+            
+            //creates an XML DOM parser
+            XML_Parser = new DOMParser();
+
+            //creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(Character, "text/xml");
+
+            document.getElementById("XML_Example").innerHTML =
+            XML_Document.getElementsByTagName("weapon")[0].childNodes[0].nodeValue +
+            ": favoured weapon of " +
+            XML_Document.getElementsByTagName("name")[0].childNodes[0].nodeValue +
+            ", the " +
+            XML_Document.getElementsByTagName("species")[0].childNodes[0].nodeValue +
+            " " +
+            XML_Document.getElementsByTagName("class")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
